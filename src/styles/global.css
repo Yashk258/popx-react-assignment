@@ -98,21 +98,20 @@ body {
 ====================== */
 
 .login-frame {
-  padding: 40px 24px;
+  padding-top: 40px;
 }
 
 .login-frame h1 {
   font-size: 32px;
   font-weight: 700;
-  color: #1d2226;
   line-height: 1.2;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .login-frame p {
   color: #6c757d;
   font-size: 18px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .input-group {
@@ -122,9 +121,9 @@ body {
 .input-group label {
   display: block;
   margin-bottom: 6px;
+  color: #6c25ff;
   font-size: 13px;
   font-weight: 600;
-  color: #6c25ff;
 }
 
 .input-group input {
@@ -146,7 +145,17 @@ body {
   color: white;
   font-size: 15px;
   font-weight: 600;
+  cursor: not-allowed;
+  transition: 0.3s ease;
+}
+
+.login-btn-active {
+  background: #6c25ff;
   cursor: pointer;
+}
+
+.login-btn:disabled {
+  opacity: 1;
 }
 
 /* ======================
